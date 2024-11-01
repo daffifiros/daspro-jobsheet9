@@ -14,5 +14,13 @@ public class ArrayRataNilai {
         }
         rata2 = total/nilaiMhs.length;
         System.out.println("Rata-rata nilai =" + rata2);
-    }
-}
+        int jumlahLulus = 0;
+                for (int nilai : nilaiMhs) {
+                    if (nilai > 70) {
+                        jumlahLulus++;
+                     }
+                }
+
+                System.out.println("Jumlah mahasiswa yang lulus: " + jumlahLulus);
+            }
+        }
